@@ -22,7 +22,7 @@ case $host_os in
 	darwin*)
 		AC_DEFINE([__UNIX__], 1, [Define if you have POSIX-compilant OS])
 		;;
-	*nto-qnx*)
+	nto-qnx*)
 		AC_DEFINE([__UNIX__], 1, [Define if you have POSIX-compilant OS])
 		;;
 	mingw32*)
