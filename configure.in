@@ -18,6 +18,9 @@ case $host_os in
 	freebsd*)
 		AC_DEFINE(__UNIX__, 1, [Define if you have POSIX-compilant OS])
 		;;
+	darwin*)
+		AC_DEFINE(__UNIX__, 1, [Define if you have POSIX-compilant OS])
+		;;
 	mingw32*)
 		if test "$host" != "$build"; then
 			case "$build_os" in

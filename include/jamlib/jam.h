@@ -36,7 +36,7 @@
 #ifndef __JAM_H__
 #define __JAM_H__
 
-#if (defined(__unix__) || defined(unix)) && !defined(USG)
+#if (defined(__unix__) || defined(unix) || defined(__MACH__)) && !defined(USG)
 #include <sys/param.h>
 #endif
 
@@ -46,7 +46,7 @@
 #include <ctype.h>
 
 #if !defined(linux)
-#if !((defined(__FreeBSD__) && __FreeBSD_version >= 440000))
+#if !(((defined(__FreeBSD__) && __FreeBSD_version >= 440000)) || defined(NeXTBSD))
 typedef unsigned short ushort;   /* must be 16 bits wide */
 #endif
 typedef unsigned long  ulong;    /* must be 32 bits wide */
