@@ -2,6 +2,6 @@
 
 AUTOMAKE_OPTIONS = foreign
 
-SUBDIRS = include src
+SUBDIRS = include src doc
 
 EXTRA_DIST = autogen.sh jamlib.doc

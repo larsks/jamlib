@@ -62,4 +62,5 @@ AC_ARG_ENABLE(lockf, [  --enable-lockf          use lockf(3) for locking instead
 AC_OUTPUT(include/Makefile
 	  include/jamlib/Makefile
 	  src/Makefile
+	  doc/Makefile
 	  Makefile)
