@@ -1,0 +1,81 @@
+2002-10-14  Sir Raorn  <raorn@binec.ru>
+
+	* [1.4.5]
+
+	* Added #include <sys/types.h>
+
+2002-09-09  Sir Raorn  <raorn@binec.ru>
+
+	* Do not typedef ushort and ulong undef FreeBSD (hope this will finaly
+	  fix those warnings)
+
+2002-07-22  Sir Raorn  <raorn@binec.ru>
+
+	* [1.4.4]
+
+	* Use lockf(3) instead of fcntl(2) for file locking (configurable at
+	  compile time)
+
+	* Do not hang if newly created messagebase can not be locked. Return
+	  JAM_LOCK_FAILED instead.
+
+2002-07-07  Sir Raorn  <raorn@binec.ru>
+
+	* Ready for autoconf 2.5/automake 1.6
+
+2001-12-27  Sir Raorn  <raorn@binec.ru>
+
+	* [1.4.3]
+
+	* Added some sanity checks. Documentation updated.
+
+2001-12-24  Sir Raorn  <raorn@binec.ru>
+
+	* [1.4.2]
+
+	* Fixed bug with message deletion via MSG_DELETED attribute. Shame on
+	  me.
+
+2001-12-16  Sir Raorn  <raorn@binec.ru>
+
+	* [1.4.1]
+
+	* Fixed memory leaks in messagebase and subfields operations.
+
+2001-12-08  Sir Raorn  <raorn@binec.ru>
+
+	* [1.4.0]
+
+	* JAM_ChangeMsgHeader() now updates UserCRC in index and ActiveMsgs in
+	  header if message's Attribute contains MSG_DELETED.
+
+	* New function JAM_DeleteMessage() - delete message from messagebase
+	  (hard).
+
+2001-11-11  Sir Raorn  <raorn@binec.ru>
+
+	* [1.3.4]
+
+	* Further dancing around crosscompiling...
+
+2001-11-10  Sir Raorn  <raorn@binec.ru>
+
+	* Moved to libtool's versioning system. Sorry if this breaks
+	  something.
+
+2001-10-26  Sir Raorn  <raorn@binec.ru>
+
+	* Win32 patch by Alexander S. Aganichev <asa@users.sourceforge.net>
+
+2001-09-08  Sir Raorn  <raorn@binec.ru>
+
+	* [1.3.2]
+
+	* Source tree rearranged, some autoconf stuff cleanup.
+
+2001-06-07  Sir Raorn  <raorn@binec.ru>
+
+	* Updated to jamlib 1.3, patched by Johan Billing:
+	  - There was a bug in JAMLIB that caused the Linux version of
+	    CrashMail to fail when trying to import an empty message to
+	    the messagebase.
