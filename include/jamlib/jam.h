@@ -46,7 +46,7 @@
 #include <ctype.h>
 
 #if !defined(linux)
-#if !((defined(__FreeBSD__) && __FreeBSD_version >= 470000))
+#if !((defined(__FreeBSD__) && __FreeBSD_version >= 440000))
 typedef unsigned short ushort;   /* must be 16 bits wide */
 #endif
 typedef unsigned long  ulong;    /* must be 32 bits wide */
