@@ -75,7 +75,7 @@
 #endif
 
 #if defined( __WIN32__ )
-# define JAM_Sleep(x) sleep((x)*1000)
+# define JAM_Sleep(x) _sleep((x)*1000)
 #endif
 
 #if defined( __UNIX__ )
@@ -497,7 +497,7 @@ int jam_Lock( s_JamBase* Base_PS, int DoLock_I )
     if ( DoLock_I )
 	Status_I = _locking(Handle_I,_LK_NBLCK,1);
     else
-	Status_I = _locking(Handle_I,_LK_UNLOCK,1);
+	Status_I = _locking(Handle_I,_LK_UNLCK,1);
 
     if ( Status_I )
 	return JAM_LOCK_FAILED;
