@@ -1,0 +1,29 @@
+LIBRARY	jam
+DESCRIPTION "JAM message base subroutines"
+EXPORTS
+	JAM_OpenMB
+	JAM_CloseMB
+	JAM_CreateMB
+	JAM_RemoveMB
+	JAM_LockMB
+	JAM_UnlockMB
+	JAM_ReadMBHeader
+	JAM_WriteMBHeader
+	JAM_FindUser
+	JAM_GetMBSize
+	JAM_ReadMsgHeader
+	JAM_ReadMsgText
+	JAM_AddMessage
+	JAM_AddEmptyMessage
+	JAM_DeleteMessage
+	JAM_ChangeMsgHeader
+	JAM_ClearMsgHeader
+	JAM_Errno
+	JAM_ReadLastRead
+	JAM_WriteLastRead
+	JAM_NewSubPacket
+	JAM_DelSubPacket
+	JAM_GetSubfield
+	JAM_GetSubfield_R
+	JAM_PutSubfield
+	JAM_Crc32
