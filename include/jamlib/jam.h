@@ -36,6 +36,10 @@
 #ifndef __JAM_H__
 #define __JAM_H__
 
+#if (defined(__unix__) || defined(unix)) && !defined(USG)
+#include <sys/param.h>
+#endif
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>
