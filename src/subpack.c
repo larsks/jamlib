@@ -61,15 +61,12 @@ s_JamSubPacket* JAM_NewSubPacket( void )
     Sub_PS->NumFields = 0;
 
     /* allocate pointer array */
-    Sub_PS->Fields = (s_JamSubfield**) malloc( Sub_PS->NumAlloc * sizeof( s_JamSubfield* ) );
+    Sub_PS->Fields = (s_JamSubfield**) calloc( Sub_PS->NumAlloc, sizeof( s_JamSubfield* ) );
 
     if ( !Sub_PS->Fields ) {
 	free (Sub_PS);
 	return NULL;
     }
-
-    /* clear pointer array */
-    memset( Sub_PS->Fields, 0, Sub_PS->NumAlloc * sizeof( s_JamSubfield* ) );
 
     return Sub_PS;
 }

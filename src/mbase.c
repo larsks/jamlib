@@ -106,11 +106,10 @@ int JAM_OpenMB( uchar* Basename_PC, s_JamBase** NewArea_PPS )
 
     *NewArea_PPS = NULL;
 
-    Base_PS = (s_JamBase*) malloc( sizeof( s_JamBase ) );
+    Base_PS = (s_JamBase*) calloc( 1, sizeof( s_JamBase ) );
     if (!Base_PS)
 	return JAM_NO_MEMORY;
 
-    memset( Base_PS, 0, sizeof( s_JamBase ) );
     *NewArea_PPS = Base_PS;
 
     Status_I = jam_Open( Base_PS, Basename_PC, "r+b" );
@@ -140,11 +139,10 @@ int JAM_CreateMB( uchar*	Basename_PC,
 
     *NewArea_PPS = NULL;
 
-    Base_PS = (s_JamBase*) malloc( sizeof( s_JamBase ) );
+    Base_PS = (s_JamBase*) calloc( 1, sizeof( s_JamBase ) );
     if (!Base_PS)
 	return JAM_NO_MEMORY;
 
-    memset( Base_PS, 0, sizeof( s_JamBase ) );
     *NewArea_PPS = Base_PS;
 
     Status_I = jam_Open( Base_PS, Basename_PC, "w+b" );
