@@ -9,7 +9,7 @@ AC_VALIDATE_CACHED_SYSTEM_TUPLE(
 	exit 1
 )
 
-AM_INIT_AUTOMAKE(jamlib,1.4.5)
+AM_INIT_AUTOMAKE(jamlib,1.4.6)
 
 case $host_os in
 	linux*)

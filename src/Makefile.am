@@ -7,7 +7,7 @@ INCLUDES = -I$(top_srcdir)/include
 lib_LTLIBRARIES = libjam.la
 
 libjam_CURRENT  = 2
-libjam_REVISION = 4
+libjam_REVISION = 5
 libjam_AGE      = 1
 
 libjam_la_LDFLAGS = -export-dynamic -version-info $(libjam_CURRENT):$(libjam_REVISION):$(libjam_AGE)
