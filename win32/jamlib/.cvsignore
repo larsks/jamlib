@@ -4,3 +4,5 @@ jamlib.dsw
 jamlib.ncb
 jamlib.opt
 jamlib.plg
+Makefile
+Makefile.in

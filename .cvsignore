@@ -15,8 +15,14 @@ configure
 libtool
 ltconfig
 ltmain.sh
-stamp-h
-stamp-h.in
+stamp-h*
 *.la
 *.lo
 jamlib-*.tar.gz
+autom4te*
+jamlib.qpg
+missing
+depcomp
+install-sh
+depcomp
+mkinstalldirs

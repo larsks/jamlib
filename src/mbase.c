@@ -63,6 +63,9 @@
 # if HAVE_UNISTD_H
 #  include <unistd.h>
 # endif
+# ifdef HAVE_FCNTL_H
+#  include <fcntl.h>
+# endif
 # ifdef USE_LOCKF
 #  include <sys/file.h>
 # endif

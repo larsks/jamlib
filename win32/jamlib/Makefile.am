@@ -2,6 +2,4 @@
 
 AUTOMAKE_OPTIONS = foreign
 
-SUBDIRS = include src doc win32
-
-EXTRA_DIST = Changes autogen.sh jamlib.doc
+EXTRA_DIST = jamlib.dsp
