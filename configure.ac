@@ -1,5 +1,5 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT([jamlib], [1.4.6], [raorn@altlinux.ru])
+AC_INIT([jamlib], [1.4.7], [raorn@altlinux.ru])
 AC_PREREQ(2.50)
 AC_CONFIG_SRCDIR([src/mbase.c])
 AC_CONFIG_HEADER(config.h)
