@@ -4,4 +4,4 @@ AUTOMAKE_OPTIONS = foreign
 
 SUBDIRS = include src doc
 
-EXTRA_DIST = autogen.sh jamlib.doc
+EXTRA_DIST = Changes autogen.sh jamlib.doc
