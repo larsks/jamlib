@@ -20,3 +20,9 @@ stamp-h.in
 *.la
 *.lo
 jamlib-*.tar.gz
+jamlib.dsw
+jamlib.ncb
+jamlib.opt
+jamlib.plg
+Debug
+Release
