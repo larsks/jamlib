@@ -43,7 +43,7 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "JAMLIB_EXPORTS" /YX /FD /c
-# ADD CPP /nologo /MT /W3 /GX /O2 /I "include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "__WIN32__" /YX /FD /c
+# ADD CPP /nologo /MT /W3 /GX /O2 /I "../../include" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "__WIN32__" /YX /FD /c
 # ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x419 /d "NDEBUG"
@@ -68,8 +68,8 @@ LINK32=link.exe
 # PROP Intermediate_Dir "Debug"
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
-# ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "JAMLIB_EXPORTS" /YX /FD /GZ  /c
-# ADD CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /I "include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "__WIN32__" /YX /FD /GZ  /c
+# ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "JAMLIB_EXPORTS" /YX /FD /GZ /c
+# ADD CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /I "../../include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "__WIN32__" /YX /FD /GZ /c
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x419 /d "_DEBUG"
@@ -92,31 +92,31 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
-SOURCE=.\src\crc32.c
+SOURCE=..\..\src\crc32.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\jamlib.def
+SOURCE=..\..\src\jamlib.def
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\lastread.c
+SOURCE=..\..\src\lastread.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\mbase.c
+SOURCE=..\..\src\mbase.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\message.c
+SOURCE=..\..\src\message.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\structrw.c
+SOURCE=..\..\src\structrw.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\subpack.c
+SOURCE=..\..\src\subpack.c
 # End Source File
 # End Group
 # Begin Group "Header Files"
@@ -124,11 +124,11 @@ SOURCE=.\src\subpack.c
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
-SOURCE=.\include\jamlib\jam.h
+SOURCE=..\..\include\jamlib\jam.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\structrw.h
+SOURCE=..\..\src\structrw.h
 # End Source File
 # End Group
 # Begin Group "Resource Files"
